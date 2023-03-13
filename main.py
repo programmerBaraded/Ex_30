@@ -8,6 +8,6 @@ princ = list(princ.split())
 princ = list(map(int, princ))
 
 print(princ)
-
 my_list = [princ[0] + i*princ[1] for i in range(princ[2])]
-print(my_list)
+my_list = list(map(str, my_list))
+print('\n'.join(my_list))
